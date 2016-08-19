@@ -244,6 +244,10 @@ local action = function(msg, blocks, ln)
 			if blocks[1] == 'kickme' then
 				api.kickUser(msg.chat.id, msg.from.id, ln)
 			end
+			if blocks[1] == 'fuckkme' then
+				api.kickUser(msg.chat.id, msg.from.id, ln)
+				api.sendMessage(msg.chat.id, 'Happy f*cking', true)
+			end
 			if msg.cb then --if the user tap on 'unban', show the pop-up
 				api.answerCallbackQuery(msg.cb_id, lang[ln].not_mod:mEscape_hard())
 			end
@@ -256,6 +260,7 @@ return {
 	cron = cron,
 	triggers = {
 		'^/(kickme)%s?',
+		'^/(fuckme)%s?',
 		'^/(kick) (@[%w_]+)',
 		'^/(kick)',
 		'^/(banlist)$',
