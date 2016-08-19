@@ -1,21 +1,20 @@
 #IT-Кот Butler
+[![Пожертвования](https://img.shields.io/badge/Пожертвования-PayPal-green.svg)](https://paypal.me/mrsteyk)
 
-##Introduction
+##Введение
 
-This bot has been created to help people in the administration of a group, with a lot of useful tools.
+Данный бот является заменой Батлеру для IT-Кота
 
-This bot born as an [Otouto](https://github.com/topkecleon/otouto) [v3.1](https://github.com/topkecleon/otouto/tree/26c1299374af130bbf8457af904cb4ea450caa51) ([@mokubot](https://telegram.me/mokubot)), but has been turned in an administration bot.
+Базирован на [GroupButler](https://github.com/RememberTheAir/GroupButler) до коммита [365b488](https://github.com/RememberTheAir/GroupButler/commit/365b4881a74d5df22b139f26d95bac867ead0389).
 
-##In few words
-Group Butler is a Telegram API bot written in Lua. It has been created to help the members of a group to keep it clean and regulated, from the point of view of administrators and normal users.
+##В нескольких словах
+Батлер нас заколебал и мы решили его улучшить! Помогайте делать нашего бота лучше!
 
-This bot takes its long-polling loop and its structure from Otouto 3.1 and it's plugin-based. This makes easier to manage each function and command of the bot, and allows to split the different capabilities of it in different files for a more specific vision of what it should do.
-
-Follow the [channel](https://telegram.me/groupbutler_ch) if you want to be updated about new changes. The official bot is [@GroupButler_bot](http://github.com/groupbutler_bot).
+[Чат IT-Кота](https://telegram.me/it_cat_encrypted)
 
 * * *
 
-##Setup
+##Настройка (на английском)
 You **must** have Lua (5.2+) installed, plus some modules: LuaSocket, LuaSec, Redis-Lua, Lua term and Lua serpent. And, to upload files, you need Curl installed too.
 
 How to install LuaRocks and set-up the modules:
@@ -74,7 +73,7 @@ $ sudo service redis-server start
 If you are updating the bot, always check near the `version` field if you have to run `/aupdate` command after the first start.
 * * *
 
-##MUST READ!!!
+##ОБЯЗАН ПРОЧИТАТЬ!!! (также на английском)
 
 Before stop the bot, if you don't want to loose your redis datas, you have to perform a save.
 
@@ -88,7 +87,7 @@ In this way, a cron job will run every minute and will perform a redis backgroun
 
 * * *
 
-##Start the process
+##Запуск бота (также на английском)
 
 To start the bot, run `./launch.sh`. To stop the bot, press Ctrl+c twice.
 
@@ -114,7 +113,7 @@ At this point, trying to contact me = haven't read the whole readme, and this is
 
 * * *
 
-##Syncing the ban database
+##Синхронизация бд банов (также на английском)
 
 If you are running a clone of this bot, you may want to import the ban stats (the kick/ban counts of each known user) of [@GroupButler_bot](http://github.com/groupbutler_bot) in your database.
 
@@ -124,14 +123,6 @@ You can use `/exportban` command (only in the private chat with the bot) to rece
 
 * * *
 
-##Credits
+##Авторы
 
-Topkecleon, for the original otouto
-
-Iman Daneshi and Tiago Danin, because I like to take a look to Jack sometimes :^). Same for Yago Pérez and his telegram-bot
-
-Lucas Montuano, for helping me a lot in the debugging of the bot
-
-All the people who reported bugs and suggested new stuffs
-
-Le Laide
+Всем контрибъюторы [GroupButler](https://github.com/RememberTheAir/GroupButler/graphs/contributors) и котрибъюторы этой репы, ну и конечно же я - mrsteyk.
