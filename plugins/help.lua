@@ -54,7 +54,7 @@ local function do_keybaord_credits()
     	{
     		{text = 'Чат IT-Кота', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
     		{text = 'GitHub', url = 'https://github.com/mrsteyk/IT-Kot-Butler'},
-    		{text = 'Очени меня!', url = 'https://telegram.me/storebot?start='..bot.username},
+    		{text = 'Оцени меня!', url = 'https://telegram.me/storebot?start='..bot.username},
 		},
 		{
 		    {text = '🔙', callback_data = '!user'}
@@ -71,7 +71,7 @@ local function do_keyboard_private()
     		{text = '📢 Канал IT-Кота', url = 'https://telegram.me/'..config.channel:gsub('@', '')},
 	    },
 	    {
-	        {text = '📕 All the commands', callback_data = '!user'}
+	        {text = '📕 Все команды', callback_data = '!user'}
         }
     }
     return keyboard
@@ -81,7 +81,7 @@ local function do_keyboard_startme()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Start me', url = 'https://telegram.me/'..bot.username}
+    		{text = 'Начни меня', url = 'https://telegram.me/'..bot.username}
 	    }
     }
     return keyboard
