@@ -1,4 +1,4 @@
-#IT-Кот Butler
+#IT-Кот Butler [![Gitter](https://badges.gitter.im/it-kot-butler/Lobby.svg)](https://gitter.im/it-kot-butler/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Пожертвования](https://img.shields.io/badge/Пожертвования-PayPal-green.svg)](https://paypal.me/mrsteyk)
 
 ##Введение
